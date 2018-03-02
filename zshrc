@@ -1,5 +1,6 @@
 export ZSH=/home/$USER/.oh-my-zsh
-ZSH_THEME="agnoster"
+
+ZSH_THEME="amusecustom"
 
 plugins=(
   git
