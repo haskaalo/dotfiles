@@ -1,7 +1,6 @@
 # Custom amuse zsh theme without timestamp
 PROMPT='
-%{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}$(git_prompt_info)
-$ '
+%{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}$(git_prompt_info)$ '
 
 # Must use Powerline font, for \uE0A0 to render.
 ZSH_THEME_GIT_PROMPT_PREFIX=" on %{$fg[magenta]%}\uE0A0 "
