@@ -1,6 +1,6 @@
 export ZSH=/home/$USER/.oh-my-zsh
 
-ZSH_THEME="amusecustom"
+ZSH_THEME="customtheme"
 
 plugins=(
   git
