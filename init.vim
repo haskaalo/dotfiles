@@ -19,6 +19,8 @@ set hlsearch " Highlight found searches
 set ignorecase " Search case insensitive
 set smartcase " If parttern contains an uppercase letter, it is case sensitive
 set noshowmode " Show mode with airline or lightline
+set splitright " Split window to the right of the current window
+set splitbelow " Split window below the current window
 
 " color
 syntax enable
