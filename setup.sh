@@ -46,11 +46,9 @@ fi
 # Symlink stuff
 echo "Setting up .bashrc, .zshrc and init.vim"
 mkdir -p ~/.config/nvim
-mkdir -p $ZSH_CUSTOM/themes
 
 ln -sf $PWD/bash_profile  ~/.bash_profile
 ln -sf $PWD/zshrc ~/.zshrc
-ln -sf $PWD/customtheme.zsh-theme $ZSH_CUSTOM/themes/customtheme.zsh-theme
 ln -sf $PWD/init.vim ~/.config/nvim/init.vim
 chsh -s $(which zsh)
 
