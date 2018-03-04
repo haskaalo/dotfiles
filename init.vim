@@ -6,6 +6,7 @@ Plug 'fatih/vim-go'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'Raimondi/delimitMate'
 Plug 'itchyny/lightline.vim'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
