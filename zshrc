@@ -1,7 +1,7 @@
 export ZSH=/home/$USER/.oh-my-zsh
 source ~/.zsh_private
 
-ZSH_THEME="gentoo"
+ZSH_THEME="avit"
 
 plugins=(
   git
