@@ -10,6 +10,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vim-scripts/FuzzyFinder'
 Plug 'vim-scripts/L9'
 Plug 'vim-scripts/AutoComplPop'
+
 call plug#end()
 
 " Settings
