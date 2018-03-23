@@ -7,7 +7,9 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'Raimondi/delimitMate'
 Plug 'itchyny/lightline.vim'
 Plug 'airblade/vim-gitgutter'
-
+Plug 'vim-scripts/FuzzyFinder'
+Plug 'vim-scripts/L9'
+Plug 'vim-scripts/AutoComplPop'
 call plug#end()
 
 " Settings
@@ -33,6 +35,3 @@ colorscheme molokai
 " delimitMate
 let g:delimitMate_expand_space = 1
 let g:delimitMate_smart_quotes = 1
-
-" Init
-autocmd VimEnter * NERDTree
