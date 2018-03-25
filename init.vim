@@ -36,3 +36,11 @@ colorscheme molokai
 " delimitMate
 let g:delimitMate_expand_space = 1
 let g:delimitMate_smart_quotes = 1
+
+" NERDTree
+let NERDTreeShowHidden=1
+
+" Command alt
+let mapleader = "."
+nmap <leader>nt :NERDTree<cr>
+nmap <leader>ff :FufFile<cr>
