@@ -44,3 +44,6 @@ let NERDTreeShowHidden=1
 let mapleader = "."
 nmap <leader>nt :NERDTree<cr>
 nmap <leader>ff :FufFile<cr>
+
+" Vim-go settings
+let g:go_auto_sameids = 1 " highlight all uses of the identifier under the cursor automatically
