@@ -5,7 +5,7 @@ Plug 'tomasr/molokai'
 Plug 'fatih/vim-go'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'Raimondi/delimitMate'
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-scripts/FuzzyFinder'
 Plug 'vim-scripts/L9'
@@ -36,6 +36,11 @@ colorscheme molokai
 " delimitMate
 let g:delimitMate_expand_space = 1
 let g:delimitMate_smart_quotes = 1
+
+" vim-airline
+let g:airline_powerline_fonts = 1 
+let g:airline#extensions#tabline#enabled = 1 " Enable the tabline
+let g:airline#extensions#tabline#buffer_nr_show = 1 " Show buffer numbers on tabline
 
 " NERDTree
 let NERDTreeShowHidden=1
