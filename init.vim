@@ -25,7 +25,7 @@ set smartcase " If parttern contains an uppercase letter, it is case sensitive
 set noshowmode " Show mode with airline or lightline
 set splitright " Split window to the right of the current window
 set splitbelow " Split window below the current window
-:set autochdir " :e is based on current directory
+set autochdir " :e is based on current directory
 
 " color
 syntax enable
