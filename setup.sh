@@ -1,22 +1,40 @@
-#!/bin/bash
-
 echo "Installing vim plug"
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+if curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim; then
+	
+	echo "Vim plug installed"
+else
+	echo "Error while installing vim plug"
+	exit
+fi
 
 # Install Oh My Zsh
-echo "Installing Oh My Zsh..."
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+which zsh
+if [ $? -eq 0 ]; then
+	echo "Installing Oh My Zsh..."
+	if sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"; then
+		echo "Installed oh my zsh"
+	else
+		echo "Error while installing oh my zsh"
+		exit
+	fi
+fi
 
 # Symlink stuff
-echo "Setting up .bash_profile, .zshrc and init.vim"
+echo "Setting up bash/zsh profile and init.vim"
 mkdir -p ~/.config/nvim
-touch ~/.bash_private
-touch ~/.zsh_private
 
-ln -sf $PWD/bash_profile  ~/.bash_profile
-ln -sf $PWD/zshrc ~/.zshrc
+which zsh
+if [ $? -eq 0 ]; then
+	touch ~/.zsh_private
+	ln -sf $PWD/zshrc ~/.zshrc	
+else
+	ln -sf $PWD/bash_profile  ~/.bash_profile
+fi
+
 ln -sf $PWD/init.vim ~/.config/nvim/init.vim
-chsh -s $(which zsh)
 
-echo "Done! use ~/.bash_private and ~/.zsh_private for private. Please restart the terminal" 
+
+echo "Done!" 
+echo "Use ~/.bash_private and ~/.zsh_private for private bash/zsh profile edit."
+echo "Restart the terminal."
